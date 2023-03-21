@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Blog News Site</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form-container" action="form-submit.php" method="post">
+          <div>
+            <label for="name">Name:</label>
+            <input class="contact-form" type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label  for="email">Email:</label>
+            <input class="contact-form" type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea class="contact-form" id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="response"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Blog News Site</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

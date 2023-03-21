@@ -1,0 +1,277 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: #0077c2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E52B2B;
+  padding: 20px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+nav {
+  background-color: #E52B2B; /* Set the background color of the nav bar to match the header color */
+  color: white; /* Set the text color to white */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #E52B2B; /* Set the background color of the nav bar to match the header color */
+  color: white; /* Set the text color to white */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display the nav links in a row */
+  justify-content: space-between; /* Spread the links evenly across the nav bar */
+  align-items: center; /* Vertically align the links in the center of the nav bar */
+}
+
+nav li {
+  margin: 0 10px; /* Add some spacing between the links */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+
+
+/* Main styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#featured {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+#featured h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#featured img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#featured h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#featured p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#featured a {
+  display: inline-block;
+  background-color: #0077c2;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#featured a:hover {
+  background-color: #0064a4;
+}
+
+#recent {
+  margin-bottom: 30px;
+}
+
+#recent h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-list article {
+  flex: 1 1 33%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.article-list article:last-child {
+  margin-right: 0;
+}
+
+.article-list img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.article-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.article-list p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.article-list a {
+  display: inline-block;
+  background-color: #0077c2;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.article-list a:hover {
+  background-color: #0064a4;
+}
+
+#categories {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+#categories h2 {
+  font-size: 28px;
+  margin-bottom:
+}
+
+
+
+footer {
+  background-color: #0B1E2E;
+  color: #FFFFFF;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Contact page styles */
+
+/* Form container */
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Form inputs */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Form submit button */
+.contact-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Form error messages */
+.contact-form .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Success message */
+.contact-form .success-message {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Form inputs */
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  /* Form submit button */
+  .contact-form input[type="submit"] {
+    width: 100%;
+  }
+}
